@@ -21,4 +21,7 @@ class HistoryViewController: UIViewController {
             self.view.addSubview(label)
         }
     }
+    @IBAction func backClicked(_ sender: Any) {
+        dismiss(animated: true)
+    }
 }

@@ -275,7 +275,7 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                                 <state key="normal" title="hist."/>
                                                 <connections>
-                                                    <segue destination="A3s-it-d6x" kind="show" id="Thj-LO-yrL"/>
+                                                    <segue destination="A3s-it-d6x" kind="show" identifier="historySegue" id="Thj-LO-yrL"/>
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWW-64-ZKv">
@@ -312,8 +312,8 @@
                                     <constraint firstItem="GpF-wo-5DM" firstAttribute="height" secondItem="ay8-VN-1gX" secondAttribute="height" id="zUJ-Wz-E8r"/>
                                 </constraints>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wM2-35-WL0">
-                                <rect key="frame" x="123" y="32" width="145" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wM2-35-WL0">
+                                <rect key="frame" x="10" y="32" width="339" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -338,7 +338,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.09352517985613" y="124.64028776978418"/>
+            <point key="canvasLocation" x="132" y="124.58770614692655"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="px2-Wv-sFy">
@@ -353,7 +353,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="zE7-Hf-bcB"/>
+                                    <action selector="backClicked:" destination="A3s-it-d6x" eventType="touchUpInside" id="19u-YX-zLT"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="History" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y1Y-eH-36R">

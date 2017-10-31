@@ -21,8 +21,11 @@ class ViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier! == "historySegue") {
+        
         let dest = segue.destination as! HistoryViewController
         dest.history = self.history
+        }
     }
     
     override func didReceiveMemoryWarning() {
